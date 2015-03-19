@@ -2,7 +2,11 @@
 
 	// Homework 1
 
-	$input = $argv[1];
+	$input = $argv;
+
+	$spaces = array_shift($input);
+
+	$input = implode(" ", $input);
 
 	function multiplyText($str) {
 		$result = '';
